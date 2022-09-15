@@ -5,6 +5,7 @@ string[] FirstArray = new string[ArrayLength];
 string[] SecondArray = new string[ArrayLength];
 void FillArray(string[]n)
 {
+    Console.WriteLine("Enter array elements:");
     for (int i = 0; i<n.Length; i++)
     {
         n[i]=Convert.ToString(Console.ReadLine());
@@ -22,6 +23,7 @@ void SelectionElements(string[] n, string[] m)
 }
 void PrintArray(string[] m)
 {
+    Console.WriteLine("Elements with less or equal 3 signs are:");
     for (int i = 0; i < m.Length; i++)
     {
         Console.Write(m[i]+" ");
